@@ -10,18 +10,18 @@ import json
 # host and credentials
 host = "107.155.124.138"
 port = 8821
-username = "logbot"
-password = "DRBpSWB3eybeh2v!"
+username = ""
+password = ""
 
 # update dynamic dns
-requests.get('https://bloodshotstudios.com/cpanelwebcall/hmpmfjzbdxuaaofaneoeetpumofjnqkp')
+requests.get('')
 
 #connect to db
 mydb = mysql.connector.connect(
-  host="bloodshotstudios.com",
-  user="bloodshotstudios_scumbot",
-  password="DRBpSWB3eybeh2v!",
-  database="bloodshotstudios_scum"
+  host="",
+  user="",
+  password="",
+  database=""
 )
 
 mycursor = mydb.cursor()
