@@ -4,7 +4,7 @@ import mysql.connector
 import datetime
 
 client = discord.Client(activity=discord.Game(name='SCUM'))
-channel = client.get_channel(682102804097269917)
+channel = client.get_channel()
 
 # track runs to keep state
 runLog = open("botRun.log", "r+")
@@ -17,10 +17,10 @@ runLog.close()
 
 #connect to db
 mydb = mysql.connector.connect(
-  host="bloodshotstudios.com",
-  user="bloodshotstudios_scumbot",
-  password="DRBpSWB3eybeh2v!",
-  database="bloodshotstudios_scum"
+  host="",
+  user="",
+  password="",
+  database=""
 )
 
 mycursor = mydb.cursor()
@@ -42,7 +42,7 @@ async def on_message(message):
 async def post_kill(record):
     await channel.send(f"{record[4]} killed {record[6]} with a {record[7]}")
 
-client.run('OTY0NjM5OTUzNTE2NjM0MjAz.Ylnk9w.HZLTlvEZJCSOVQmwaERFzJzwoyQ')
+client.run('')
 
 while True:
     current_time = time.time()
