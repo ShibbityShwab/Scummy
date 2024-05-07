@@ -31,10 +31,10 @@ requests.get('https://bloodshotstudios.com/cpanelwebcall/hmpmfjzbdxuaaofaneoeetp
 
 #connect to db
 mydb = mysql.connector.connect(
-    host="bloodshotstudios.com",
-    user="bloodshotstudios_scumbot",
-    password="DRBpSWB3eybeh2v!",
-    database="bloodshotstudios_scum"
+    host="",
+    user="",
+    password="",
+    database=""
 )
 
 mycursor = mydb.cursor()
@@ -44,14 +44,14 @@ async def getLogs():
         # FTP credentials
         host = "107.155.124.138"
         port = 8821
-        username = "logbot"
-        password = "DRBpSWB3eybeh2v!"
+        username = ""
+        password = ""
         
         # FTP connection
         ftp = FTP()
         ftp.connect(host, port)
         ftp.login(username, password)
-        ftp.cwd("/107.155.124.138_7000/")
+        ftp.cwd("//")
 
         # loop over files in directory
         for file in ftp.nlst():
