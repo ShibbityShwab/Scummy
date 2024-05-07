@@ -24,10 +24,10 @@ class MyClient(discord.Client):
         
         #connect to db
         mydb = mysql.connector.connect(
-            host="bloodshotstudios.com",
-            user="bloodshotstudios_scumbot",
-            password="DRBpSWB3eybeh2v!",
-            database="bloodshotstudios_scum"
+            host="",
+            user="",
+            password="",
+            database=""
         )
 
         mycursor = mydb.cursor()
